@@ -1,5 +1,8 @@
 # Please rename the file to `appcenter-post-build.sh`
 
+# install jq
+brew install jq
+
 # Function to get default distribution group and populate ENV_DISTRIBUTE_GROUP
 function get_appcenter_distribute_group {
   if [ -z "${ENV_DISTRIBUTE_GROUP}" ]
